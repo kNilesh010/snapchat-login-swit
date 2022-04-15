@@ -6,12 +6,20 @@
 //
 
 import UIKit
+import SCSDKLoginKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let loginButton = SCSDKLoginButton { success, error in
+            guard success, error == nil else
+            {return}
+        }
+        loginButton.sizeToFit()
+        loginButton.center = view.center
+        view.addSubview(loginButton)
+        
     }
 
 

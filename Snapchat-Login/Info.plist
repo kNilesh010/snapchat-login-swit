@@ -21,5 +21,28 @@
 			</array>
 		</dict>
 	</dict>
+	<key>SCSDKClientId</key>
+	<string>f68e6e54-ab5e-488d-a330-3a8084f49eff</string>
+	<key>SCSDKScopes</key>
+    <array>
+        <string>https://auth.snapchat.com/oauth2/api/user.display_name</string>
+    </array>
+	<key>SCSDKRedirectUrl</key>
+	<string>testapp://myapp</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>snapchat</string>
+		<string>bitmoji-sdk</string>
+		<string>itms-apps</string>
+	</array>
+    <key>CFBundleURLTypes</key>
+        <array>
+            <dict>
+                <key>CFBundleURLSchemes</key>
+                <array>
+                    <string>testapp</string>
+                </array>
+            </dict>
+        </array>
 </dict>
 </plist>
